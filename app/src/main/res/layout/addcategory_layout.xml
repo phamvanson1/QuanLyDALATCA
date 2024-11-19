@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@color/off_white">
+
+    <ImageView
+        android:id="@+id/img_addcategory_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:padding="5dp"
+        android:contentDescription="@string/back_button" />
+
+    <TextView
+        android:id="@+id/txt_addcategory_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_mon_an"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/muli_black"
+        android:textColor="@color/black"
+        android:textAllCaps="true"
+        android:layout_marginTop="20dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtl_addcategory_TenLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="@string/ten_menu"
+        app:hintTextColor="@color/dark_gray"
+        app:boxStrokeColor="@color/dark_gray"
+        app:boxStrokeWidthFocused="2dp"
+        app:startIconDrawable="@drawable/ic_baseline_airline_seat_legroom_normal_24"
+        app:startIconTint="@color/dark_gray"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/dark_gray">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/muli"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/img_addcategory_ThemHinh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/menu1"
+            android:background="@drawable/image_card_background_with_pattern"
+            android:elevation="8dp"
+            android:contentDescription="@string/menu_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/chon_anh"
+            android:textColor="@color/colorRed"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@drawable/text_background"
+            android:padding="8dp" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_addcategory_TaoLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorAccent"
+        android:elevation="8dp"
+        android:text="@string/them_menu"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/muli" />
+
+</LinearLayout>

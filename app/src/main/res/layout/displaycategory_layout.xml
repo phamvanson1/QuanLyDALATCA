@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_pink">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/header_gradient1"
+        android:elevation="6dp"
+        android:gravity="center">
+
+        <!-- Icon bên trái -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_flower_left"
+            android:tint="@color/dark_pink"
+            android:layout_gravity="center_vertical" />
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thực đơn các loại"
+            android:textSize="26sp"
+            android:fontFamily="@font/muli_black"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:shadowColor="#80000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="3"
+            android:layout_gravity="center" />
+
+        <!-- Icon bên phải -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_flower_right"
+            android:tint="@color/dark_pink"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <!-- Phần nội dung chính -->
+    <GridView
+        android:id="@+id/gvCategory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:verticalSpacing="15dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:background="@drawable/grid_background1"
+        android:clipToPadding="false"
+        android:scrollbarStyle="outsideOverlay" />
+
+</LinearLayout>
